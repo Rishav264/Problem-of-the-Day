@@ -154,7 +154,9 @@ def input_manager(user_input :int) -> bool:
 
 print("Welcome to the Library Book Management System: ")
 
-while True:
+#runnig check to stop the program
+running = True
+while running:
     print("What can we do for you: ")
     print("1.Search a Book")
     print("2.Borrow a Book")
@@ -162,4 +164,5 @@ while True:
     print("4.Exit")
 
     user_input = input("enter the command: ")
-    input_manager(user_input)
+    running = input_manager(user_input)
+    
